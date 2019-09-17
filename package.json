@@ -10,6 +10,10 @@
   },
   "author": "Vasilios Magriplis",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yottaawesome/react-jsx-boilerplate.git"
+  },
   "dependencies": {
     "@babel/polyfill": "7.6.0",
     "react": "^16.9.0",

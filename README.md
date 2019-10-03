@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/yottaawesome/react-jsx-boilerplate.svg?branch=master)](https://travis-ci.org/yottaawesome/react-jsx-boilerplate)
+[![Build Status](https://travis-ci.org/yottaawesome/react-jsx-boilerplate.svg?branch=master)](https://travis-ci.org/yottaawesome/react-jsx-boilerplate) ![Dependencies](https://david-dm.org/yottaawesome/react-jsx-boilerplate.svg) ![Dev-Dependencies](https://david-dm.org/yottaawesome/react-jsx-boilerplate/dev-status.svg)
 
 # React JSX Boilerplate
 

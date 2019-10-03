@@ -1,5 +1,5 @@
 {
-  "name": "react-boilerplate",
+  "name": "react-jsx-boilerplate",
   "version": "1.0.0",
   "description": "Quick setup with React.",
   "main": "src/index.js",

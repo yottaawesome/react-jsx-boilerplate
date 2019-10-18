@@ -16,7 +16,7 @@
     "url": "https://github.com/yottaawesome/react-jsx-boilerplate.git"
   },
   "dependencies": {
-    "core-js": "3.3.1",
+    "core-js": "3.3.2",
     "regenerator-runtime": "0.13.3",
     "react": "16.10.2",
     "react-dom": "16.10.2",
@@ -42,7 +42,7 @@
     "sass-loader": "8.0.0",
     "style-loader": "1.0.0",
     "url-loader": "2.2.0",
-    "webpack": "4.41.1",
+    "webpack": "4.41.2",
     "webpack-cli": "3.3.9",
     "webpack-dev-server": "3.8.2"
   },

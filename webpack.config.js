@@ -1,3 +1,4 @@
+/* eslint-disable max-lines-per-function */
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HTMLWebpackPlugin = require("html-webpack-plugin");

@@ -17,16 +17,16 @@
     "url": "https://github.com/yottaawesome/react-jsx-boilerplate.git"
   },
   "dependencies": {
-    "core-js": "3.3.6",
+    "core-js": "3.4.0",
     "regenerator-runtime": "0.13.3",
     "react": "16.11.0",
     "react-dom": "16.11.0",
     "react-router-dom": "5.1.2"
   },
   "devDependencies": {
-    "@babel/core": "7.6.4",
-    "@babel/preset-env": "7.6.3",
-    "@babel/preset-react": "7.6.3",
+    "@babel/core": "7.7.2",
+    "@babel/preset-env": "7.7.1",
+    "@babel/preset-react": "7.7.0",
     "babel-eslint": "10.0.3",
     "babel-loader": "8.0.6",
     "css-loader": "3.2.0",

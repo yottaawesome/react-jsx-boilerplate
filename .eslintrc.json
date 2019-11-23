@@ -20,6 +20,7 @@
     },
     "plugins": [
         "react",
+	"react-hooks",
         "eslint-plugin-react"
     ],
     "settings": {
@@ -239,6 +240,8 @@
         "quote-props": "error",
         "quotes": "off",
         "radix": "error",
+	"react-hooks/rules-of-hooks": "error",
+    	"react-hooks/exhaustive-deps": "warn",
         "require-await": "error",
         "require-jsdoc": "error",
         "require-unicode-regexp": "error",

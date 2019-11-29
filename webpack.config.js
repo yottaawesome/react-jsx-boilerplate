@@ -2,6 +2,7 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = (env, argv) => {
   // We need to set this manually due to https://github.com/webpack/webpack/issues/7074
@@ -79,6 +80,7 @@ module.exports = (env, argv) => {
     },
 
     plugins: [
+      new CleanWebpackPlugin(),
       new MiniCssExtractPlugin({
         // Options similar to the same options in webpackOptions.output
         // both options are optional

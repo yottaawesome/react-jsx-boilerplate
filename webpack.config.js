@@ -46,9 +46,9 @@ module.exports = (env, argv) => {
               // https://github.com/webpack-contrib/css-loader
               options: {
                 modules: {
-                  localIdentName: "[folder]__[local]__[hash:base64:5]"
-                },
-                localsConvention: "camelCase"
+                  localIdentName: "[folder]__[local]__[hash:base64:5]",
+		  exportLocalsConvention: "camelCase"
+                }
               }
             },
             {

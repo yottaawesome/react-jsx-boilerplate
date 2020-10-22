@@ -1,7 +1,7 @@
 /* eslint-disable max-lines-per-function */
-const path = require("path");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const HTMLWebpackPlugin = require("html-webpack-plugin");
+const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = (env, argv) => {
@@ -10,20 +10,20 @@ module.exports = (env, argv) => {
   //      Sets process.env.NODE_ENV on DefinePlugin to value production .
   // This is misleading, as printing the process.env.NODE_ENV variable out shows it is undefined,
   // causing the style-loader/minicssextractplugin rule to fail to behave as expected.
-  let isDevelopment = (process.env.NODE_ENV = argv["mode"]) !== "production";
+  let isDevelopment = (process.env.NODE_ENV = argv['mode']) !== 'production';
 
   return {
-    entry: "./src/index.js",
+    entry: './src/index.js',
 
     output: {
-      path: path.resolve(__dirname, "dist"),
-      filename: "[contenthash].[name].js"
+      path: path.resolve(__dirname, 'dist'),
+      filename: '[contenthash].[name].js'
     },
 
-    devtool: "source-map",
+    devtool: 'source-map',
 
     devServer: {
-      contentBase: "./dist",
+      contentBase: './dist',
       overlay: true,
       historyApiFallback: true
     },
@@ -34,23 +34,23 @@ module.exports = (env, argv) => {
           test: /\.js$/,
           exclude: /node_modules/,
           use: [
-            { loader:"babel-loader" }, 
-            { loader:"eslint-loader"}
+            { loader: 'babel-loader' },
+            { loader: 'eslint-loader' }
           ]
         },
         // The following loader rules are necessary for s/css modules
         {
           test: /\.module\.s(a|c)ss$/,
           use: [
-            { loader: isDevelopment ? "style-loader" : MiniCssExtractPlugin.loader },
+            { loader: isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader },
             {
-              loader: "css-loader",
+              loader: 'css-loader',
               // As of css-loader 3, the options have changed
               // https://github.com/webpack-contrib/css-loader
               options: {
                 modules: {
-                  localIdentName: "[folder]__[local]__[hash:base64:5]",
-                  exportLocalsConvention: "camelCase"
+                  localIdentName: '[folder]__[local]__[hash:base64:5]',
+                  exportLocalsConvention: 'camelCase'
                 }
               }
             },
@@ -85,10 +85,10 @@ module.exports = (env, argv) => {
       new MiniCssExtractPlugin({
         // Options similar to the same options in webpackOptions.output
         // both options are optional
-        filename: "[name].[contenthash].css"
+        filename: '[name].[contenthash].css'
       }),
       new HTMLWebpackPlugin({
-        template: path.join(__dirname, "./src/index.html")
+        template: path.join(__dirname, './src/index.html')
       })
     ]
   };

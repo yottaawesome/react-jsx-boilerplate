@@ -17,7 +17,7 @@ module.exports = (env, argv) => {
 
     output: {
       path: path.resolve(__dirname, "dist"),
-      filename: "[hash].[name].js"
+      filename: "[contenthash].[name].js"
     },
 
     devtool: "source-map",
@@ -33,13 +33,16 @@ module.exports = (env, argv) => {
         {
           test: /\.js$/,
           exclude: /node_modules/,
-          loaders: ["babel-loader", "eslint-loader"]
+          use: [
+            { loader:"babel-loader" }, 
+            { loader:"eslint-loader"}
+          ]
         },
         // The following loader rules are necessary for s/css modules
         {
           test: /\.module\.s(a|c)ss$/,
-          loader: [
-            isDevelopment ? "style-loader" : MiniCssExtractPlugin.loader,
+          use: [
+            { loader: isDevelopment ? "style-loader" : MiniCssExtractPlugin.loader },
             {
               loader: "css-loader",
               // As of css-loader 3, the options have changed
@@ -47,31 +50,29 @@ module.exports = (env, argv) => {
               options: {
                 modules: {
                   localIdentName: "[folder]__[local]__[hash:base64:5]",
-		   exportLocalsConvention: "camelCase"
+                  exportLocalsConvention: "camelCase"
                 }
               }
             },
-            {
-              loader: "sass-loader"
-            }
+            { loader: "sass-loader" }
           ]
         },
         {
           test: /\.scss$/,
           exclude: /\.module.(s(a|c)ss)$/,
           use: [
-            isDevelopment ? "style-loader" : MiniCssExtractPlugin.loader,
-            "css-loader",
-            "sass-loader"
+            isDevelopment ? 'style-loader' : MiniCssExtractPlugin.loader,
+            'css-loader',
+            'sass-loader'
           ]
         },
         {
           test: /\.(png|jpe?g|gif|svg)$/,
           use: [
             {
-              loader: "url-loader",
+              loader: 'url-loader',
               options: {
-                fallback: "file-loader"
+                fallback: 'file-loader'
               }
             }
           ]

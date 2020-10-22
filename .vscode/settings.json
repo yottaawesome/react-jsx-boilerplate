@@ -1,20 +1,16 @@
 {
     "[javascript]": {
         "editor.insertSpaces": true,
-        "editor.tabSize": 2
+        "editor.tabSize": 2,
+        "editor.detectIndentation": false
     },
     "[json]": {
         "editor.insertSpaces": true,
-        "editor.tabSize": 2
+        "editor.tabSize": 2,
+        "editor.detectIndentation": false
     },
     "eslint.validate": [
-        {
-          "language": "javascript",
-          "autoFix": true
-        },
-        {
-          "language": "javascriptreact",
-          "autoFix": true
-        }
+        "javascript",
+        "javascriptreact",
     ]
 }

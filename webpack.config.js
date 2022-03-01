@@ -14,6 +14,8 @@ module.exports = (env, argv) => {
 
   return {
     entry: './src/index.js',
+    
+    mode: isDevelopment ? 'development' : 'production',
 
     output: {
       path: path.resolve(__dirname, 'dist'),
@@ -23,8 +25,9 @@ module.exports = (env, argv) => {
     devtool: 'source-map',
 
     devServer: {
-      contentBase: './dist',
-      overlay: true,
+      static : {
+        directory : path.join(__dirname, "dist/")
+      },
       historyApiFallback: true
     },
 
@@ -34,8 +37,7 @@ module.exports = (env, argv) => {
           test: /\.js$/,
           exclude: /node_modules/,
           use: [
-            { loader: 'babel-loader' },
-            { loader: 'eslint-loader' }
+            { loader: 'babel-loader' }
           ]
         },
         // The following loader rules are necessary for s/css modules

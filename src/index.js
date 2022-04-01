@@ -8,7 +8,7 @@ import OtherRoute from './other-route';
 import './styles.scss';
 
 const App = () =>
-  <div className="main">
+  <div className="">
     <HashRouter>
       <nav>
         <ul>

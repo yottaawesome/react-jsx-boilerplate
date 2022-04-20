@@ -17,7 +17,7 @@
     "url": "https://github.com/yottaawesome/react-jsx-boilerplate.git"
   },
   "dependencies": {
-    "core-js": "3.21.1",
+    "core-js": "3.22.1",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-router-dom": "6.3.0",
@@ -28,7 +28,7 @@
     "@babel/eslint-parser": "^7.17.0",
     "@babel/preset-env": "7.16.11",
     "@babel/preset-react": "7.16.7",
-    "babel-loader": "8.2.4",
+    "babel-loader": "8.2.5",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "6.7.1",
     "eslint": "8.13.0",
@@ -39,7 +39,7 @@
     "file-loader": "6.2.0",
     "html-webpack-plugin": "5.5.0",
     "mini-css-extract-plugin": "2.6.0",
-    "sass": "1.50.0",
+    "sass": "1.50.1",
     "sass-loader": "12.6.0",
     "style-loader": "3.3.1",
     "url-loader": "4.1.1",

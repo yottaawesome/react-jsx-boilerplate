@@ -17,10 +17,10 @@
     "url": "https://github.com/yottaawesome/react-jsx-boilerplate.git"
   },
   "dependencies": {
-    "core-js": "3.27.1",
+    "core-js": "3.27.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-router-dom": "6.6.2",
+    "react-router-dom": "6.7.0",
     "regenerator-runtime": "0.13.11"
   },
   "devDependencies": {
@@ -32,8 +32,8 @@
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "6.7.3",
     "eslint": "8.32.0",
-    "eslint-plugin-import": "2.27.4",
-    "eslint-plugin-react": "7.32.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-react": "7.32.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "fibers": "5.0.3",
     "file-loader": "6.2.0",
